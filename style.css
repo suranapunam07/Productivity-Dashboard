@@ -1,0 +1,215 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5fffa;
+}
+
+.app{
+display:flex;
+height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+width:220px;
+background:#d8fff1;
+padding:20px;
+display:flex;
+flex-direction:column;
+}
+
+.sidebar h2{
+margin-bottom:20px;
+}
+
+.nav-item{
+display:block;
+margin:10px 0;
+text-decoration:none;
+color:black;
+}
+
+.sidebar button{
+margin-top:auto;
+padding:10px;
+cursor:pointer;
+}
+
+/* Main */
+.main{
+flex:1;
+padding:20px;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+/* Grid */
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Tasks */
+.task-input{
+display:flex;
+gap:10px;
+margin-bottom:10px;
+}
+
+.task-input input{
+flex:1;
+padding:8px;
+}
+
+.task-input button{
+padding:8px 12px;
+cursor:pointer;
+}
+
+#taskList li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+background:#f0f0f0;
+margin-bottom:5px;
+border-radius:6px;
+}
+
+#taskList li span{
+flex:1;
+cursor:pointer;
+}
+
+#taskList li button{
+background:red;
+color:white;
+border:none;
+padding:5px 8px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.completed{
+text-decoration: line-through;
+opacity:0.6;
+}
+
+/* Timer */
+#timerdisplay{
+font-size:40px;
+text-align:center;
+margin:10px 0;
+}
+
+.timer-buttons{
+display:flex;
+justify-content:center;
+gap:10px;
+}
+
+/* Notes */
+textarea{
+width:100%;
+height:100px;
+padding:10px;
+}
+
+/* 🌙 DARK MODE */
+.dark-mode{
+background:#121212;
+color:#e0e0e0;
+}
+
+.dark-mode .card{
+background:#1e1e1e;
+}
+
+.dark-mode .sidebar{
+background:#0f3d35;
+}
+
+.dark-mode .nav-item{
+color:white;
+}
+
+/* ✅ DARK MODE TASK FIX */
+.dark-mode #taskList li{
+background:#2a2a2a;
+color:white;
+}
+
+.dark-mode #taskList li span{
+color:white;
+}
+
+.dark-mode #taskList li button{
+background:#ff4d4d;
+}
+
+.dark-mode .task-input input{
+background:#1e1e1e;
+color:white;
+border:1px solid #555;
+}
+
+/* 🌿 GLOBAL BUTTON STYLE */
+button{
+background:#00b894;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+}
+
+button:hover{
+background:#00997a;
+transform:translateY(-1px);
+}
+
+/* Special styles */
+
+#addTask{
+background:#00cec9;
+}
+
+#addTask:hover{
+background:#00a8a8;
+}
+
+#resetTimer{
+background:#ff7675;
+}
+
+#resetTimer:hover{
+background:#d63031;
+}
+
+.dark-mode button{
+background:#00c896;
+color:black;
+}
+
+.dark-mode button:hover{
+background:#00a87a;
+}
+
+button{
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
